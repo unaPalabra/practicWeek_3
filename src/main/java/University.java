@@ -1,17 +1,3 @@
-enum StudyProfile {
-    MEDICINE("Медицина"),
-    LINGUISTICS("Лингвистика"),
-    GEOLOGY("Геология"),
-    GENETIC_ENGINEERING("Генная инженерия");
-
-    final String profileName;
-    StudyProfile(String profileName) {
-        this.profileName = profileName;
-    }
-    public String getProfileName() {
-        return profileName;
-    }
-}
 
 public class University {
     String id;
@@ -26,6 +12,10 @@ public class University {
         this.shortName = shortName;
         this.yearOfFoundation = yearOfFoundation;
         this.mainProfile = mainProfile;
+    }
+
+    public University() {
+
     }
 
     public String getId() {
