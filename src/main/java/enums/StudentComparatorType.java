@@ -1,6 +1,6 @@
 package enums;
 
-enum StudentComparator {
+public enum StudentComparatorType {
     FULL_NAME,
     UNIVERSITITY_ID,
     COURSE_NUMBER,
