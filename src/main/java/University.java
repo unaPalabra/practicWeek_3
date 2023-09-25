@@ -1,3 +1,4 @@
+import enums.StudyProfile;
 
 public class University {
     String id;

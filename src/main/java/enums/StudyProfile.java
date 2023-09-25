@@ -1,4 +1,6 @@
-enum StudyProfile {
+package enums;
+
+public enum StudyProfile {
     PHYSICS("Физика"),
     COMPUTER_SCIENCE("Информатика"),
     MATHEMATICS("Математика"),
