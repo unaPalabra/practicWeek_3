@@ -16,6 +16,8 @@ public class Main {
                 .sorted(universityComparator)
                 .forEach(System.out::println);
 
+        System.out.println();
+
         List<Student> students =
                 ReadingXLS.readXlsStudents("src/main/resources/universityInfo.xlsx");
         StudentComparator studentComparator =
