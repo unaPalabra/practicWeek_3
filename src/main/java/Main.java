@@ -4,7 +4,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         List<University> universities =
-                ReadingXLS.readXlsUniversity ("src/main/resources/universityInfo.xlsx");
+                ReadingXLS.readXlsUniversity("src/main/resources/universityInfo.xlsx");
         for (University university : universities) {
             System.out.println(university);
         }
