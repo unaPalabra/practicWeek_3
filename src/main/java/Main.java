@@ -14,7 +14,6 @@ public class Main {
         List<University> universities =
                 ReadingXLS.readXlsUniversity("src/main/resources/universityInfo.xlsx");
 
-
         UniversityComparator universityComparator =
                 ComparatorUtil.getUniversityComparator(UniversityComparatorType.YEAR);
         universities.sort(universityComparator);
@@ -26,6 +25,7 @@ public class Main {
 
         // проверяем, что обратно коллекция воссоздаётся в таком же количестве элементов
         System.out.println(universities.size() == universitiesFromJson.size());
+
         System.out.println();
 
         universities.forEach(university -> {
@@ -36,6 +36,8 @@ public class Main {
             // проверяем, что обратно элемент воссоздаётся
             System.out.println(universityFromJson);
         });
+
+        System.out.println();
 
         List<Student> students =
                 ReadingXLS.readXlsStudents("src/main/resources/universityInfo.xlsx");
@@ -48,6 +50,7 @@ public class Main {
         List<Student> studentsFromJson = JsonUtil.jsonToStudentList(studentsJson);
         // проверяем, что обратно коллекция воссоздаётся в таком же количестве элементов
         System.out.println(students.size() == studentsFromJson.size());
+
         students.forEach(student -> {
             String studentJson = JsonUtil.studentToJson(student);
             // проверяем, что json из отдельного элемента создан успешно
