@@ -51,6 +51,8 @@ public class Main {
         // проверяем, что обратно коллекция воссоздаётся в таком же количестве элементов
         System.out.println(students.size() == studentsFromJson.size());
 
+        System.out.println();
+
         students.forEach(student -> {
             String studentJson = JsonUtil.studentToJson(student);
             // проверяем, что json из отдельного элемента создан успешно
